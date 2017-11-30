@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="default">
+    <head>
+        <title>FC Cup Challenge - CloudCops - Edit Entry</title>
+    </head>
+    <body>
+        <div layout:fragment="content" class="row">
+            <div class="col-xs-8 col-md-8">
+                <h2>Edit Entry</h2>
+                <form action="/update">
+                    <div class="form-group">
+                        <label for="email">Application Name:</label>
+                        <input type="text" class="form-control" name="appName" th:value="${citiapplication.appName}" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Application Description:</label>
+                        <textarea class="form-control" name="appDesc" cols="60" rows="3" th:text="${citiapplication.appDesc}"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Application CSID:</label>
+                        <input type="number" class="form-control" name="appID" th:value="${citiapplication.appID}" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Application URL:</label>
+                        <input type="url" class="form-control" name="appURL" th:value="${citiapplication.appURL}" />
+                    </div>
+                    <input type="hidden" name="id" th:value="${citiapplication.id}" />
+                    <button type="submit" class="btn btn-success">Save</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

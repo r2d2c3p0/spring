@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="default">
+    <head>
+        <title>FC Cup Challenge - CloudCops - Show Current Entries</title>
+    </head>
+    <body>
+        <div layout:fragment="content" class="row">
+            <div class="col-xs-8 col-md-8">
+				<h2 th:text="${citiapplication.appName}"></h2>
+                <h2><img th:src="${citiapplication.appURL}" width="200" /></h2>
+                <dl class="list">
+                    <dt>Application Description</dt>
+                    <dd th:text="${citiapplication.appDesc}"></dd>
+                    <dt>Application CSID</dt>
+                    <dd th:text="${citiapplication.appID}"></dd>
+                </dl>
+                <form action="/delete">
+                    <input type="hidden" name="id" th:value="${citiapplication.id}" />
+                    <h2><input type="submit" class="btn btn-danger" value="Delete" onclick="return confirm('Are you sure?');" />
+                        <a th:href="@{'/edit/' + ${citiapplication.id}}" class="btn btn-warning">Edit</a></h2>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="default">
+    <head>
+        <title>FC Cup Challenge - CloudCops Homepage</title>
+    </head>
+    <body>
+        <div layout:fragment="content" class="row">
+            <div class="col-xs-8 col-md-8">
+                <h2>Application List</h2>
+                <div class="table-responsive">
+                    <table class="table" id="citiapplication-table">
+                        <thead>
+                            <tr>
+                                <th>Application Name</th>
+                                <th>Application Description</th>
+                                <th>Application CSID</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr th:each="citiapplication : ${citiapplications}">
+                                <td><a th:text="${citiapplication.appName}" th:href="@{'/show/' + ${citiapplication.id}}"></a></td>
+                                <td th:text="${citiapplication.appDesc}"></td>
+                                <td th:text="${citiapplication.appID}"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

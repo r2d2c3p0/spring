@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="default">
+    <head>
+        <title>FC Cup Challenge - CloudCops - Add Entry</title>
+    </head>
+    <body>
+        <div layout:fragment="content" class="row">
+            <div class="col-xs-8 col-md-8">
+                <h2>Add New Entry</h2>
+                <form action="/save">
+                    <div class="form-group">
+                        <label for="email">Application Name:</label>
+                        <input type="text" class="form-control" name="appName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Application Description:</label>
+                        <textarea class="form-control" name="appDesc" cols="60" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Application CSID:</label>
+                        <input type="number" class="form-control" name="appID" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Application URL:</label>
+                        <input type="url" class="form-control" name="appURL" />
+                    </div>
+                    <button type="submit" class="btn btn-success">Save</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

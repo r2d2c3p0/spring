@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: FCCupChallengeApplication
+  port: 0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8080}
+  instance:
+    preferIpAddress: true
