@@ -1,0 +1,5 @@
+---
+applications:
+- name: poc-app
+  memory: 512M
+  instances: 2
