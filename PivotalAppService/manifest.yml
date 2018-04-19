@@ -1,5 +1,10 @@
 ---
 applications:
 - name: poc-app
-  memory: 512M
+  memory: 256M
   instances: 2
+  disk_quota: 100M
+  health-check-type: http
+  health-check-http-endpoint: /health
+  health-check-type: port
+  path: .
