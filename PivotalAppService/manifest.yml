@@ -6,5 +6,4 @@ applications:
   disk_quota: 100M
   health-check-type: http
   health-check-http-endpoint: /health
-  health-check-type: port
   path: .
