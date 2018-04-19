@@ -1,6 +1,6 @@
 ---
 applications:
-- name: pas-poc # Name of the application
-  memory: 512M # Amount of memory to be allotted to the Application
-  host: pas-poc # Subdomain to be allotted to the application.
-  path: ./build/libs/pas-poc.war # path to the war file
+- name: pas-poc
+  memory: 512M
+  host: pas-poc
+  path: ./target/pas-poc.war
