@@ -12,7 +12,7 @@ public class HelloWorldController {
 
     @RequestMapping(value = {"/**/*","/"}, method = RequestMethod.GET)
     @ResponseBody
-    public String justSayIt(){
+    public String ContainerHello(){
         return RESPONSE;
     }
 
