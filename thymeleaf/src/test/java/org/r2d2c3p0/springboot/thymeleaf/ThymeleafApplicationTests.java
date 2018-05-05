@@ -12,5 +12,9 @@ public class ThymeleafApplicationTests {
     @Test
     public void contextLoads() {
     }
+    
+    @Test
+    public void main() {
+    }
 
 }
