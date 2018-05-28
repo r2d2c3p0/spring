@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "logging.levels.org.springframework.boot.env.-property-sources-loader",
+    "type": "java.lang.String",
+    "description": "A description for 'logging.levels.org.springframework.boot.env.-property-sources-loader'"
+  },
+  {
+    "name": "logging.levels.org.springframework.cloud.config.server",
+    "type": "java.lang.String",
+    "description": "A description for 'logging.levels.org.springframework.cloud.config.server'"
+  }
+]}

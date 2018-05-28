@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/r2d2c3p0/spring.git
+          searchPaths: cloudconfig-repo
+        native:
+          search-locations:
+          - C:\\Users
+  profiles:
+    active:
+    - native
+
+logging:
+  levels:
+    org.springframework.boot.env.PropertySourcesLoader: TRACE
+    org.springframework.cloud.config.server: DEBUG
