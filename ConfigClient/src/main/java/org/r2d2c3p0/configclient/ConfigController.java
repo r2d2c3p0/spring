@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConfigController {
  
     // https://github.com/r2d2c3p0/spring/cloudconfig-repo
-	@Value("${user: Default Copyright}")
+	@Value("${user: r2d2c3p0}")
     private String user;
  
     @RequestMapping("/default")
