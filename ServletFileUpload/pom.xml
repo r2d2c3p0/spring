@@ -2,19 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<groupId>org.r2d2c3p0.fileupload</groupId>
 	<artifactId>ServletFileUpload</artifactId>
 	<version>1</version>
 	<packaging>war</packaging>
-
 	<name>ServletFileUpload</name>
 	<url>https://github.com/r2d2c3p0</url>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -23,12 +19,9 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
-
 		<finalName>fileuploader</finalName>
 		<sourceDirectory>src/main/java</sourceDirectory>
-
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -49,9 +42,6 @@
 					<executable>C:\Program Files\Java\jdk1.8.0_151\bin\javac.exe</executable>
 				</configuration>
 			</plugin>
-
 		</plugins>
-
 	</build>
-
 </project>
