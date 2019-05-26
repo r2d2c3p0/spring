@@ -19,7 +19,6 @@ import javax.servlet.http.Part;
 )
 public class FileUploadServlet extends HttpServlet {
 	private static final long serialVersionUID = 5619951677845873534L;
-	
 	private static final String UPLOAD_DIR = "uploads";
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -100,7 +99,6 @@ public class FileUploadServlet extends HttpServlet {
 		writer.append("    <script src=\"https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js\"></script>\r\n");
 		writer.append("  </body>\r\n");
 		writer.append("</html>\r\n");
-		
 		//writer.append("    </body>\r\n").append("</html>\r\n");
 	}
 	@Override
